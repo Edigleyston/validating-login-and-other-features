@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ptbr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script type="module" defer src="JS/modules/mainLogado.js"></script>
+    <script>document.documentElement.className += 'js';</script> <!--Deixar conteudo ativo caso browser bloqueie js-->
+    <title>AF Testes</title>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="backToHome disabled">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVR4nO2WQQqDMBBF/yX+UO9/mELrqi48jt3ERaWUNJmZTGAeCCIqeUbjA5IkSZJPpGxTQwAvADuABZNLHGWbUkYAbEVgu+zLjDOxA7h9ObbMKHEyjQx/SEwjwwqJ8DL8QyKsDBskwsmwQyKMDBUkhstQUWKYjDT8pWujseXe7qtT7VOm9cz0LrFHBBlpfJ16olG0XzONn11rNFJrZrQkegbGXhltiSEyNJJwl3k6fJi91zwqzscdwOqwurTKrGWMamQ0XshojFa+7gVMQ4nQ0RhOho4SZjIjJEJEozYcEY1W0DMaraFHNHohltHojVhEY5IkSZK8AZZJ6J00v19zAAAAAElFTkSuQmCC"
+                alt="Setinha para subir pro inicio">
+        </div>
+        <nav class="menu" data-menu="suave">
+            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            
+            <ul data-menu="list" id="menu">
+                <li><a href="#programs">Programas</a></li>
+                <li data-dropdown>
+                    <a href="about">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="empresa.html">A Empresa</a></li>
+                        <li><a href="equipe.html">Equipe Gerencial</a></li>
+                    </ul>
+                </li>
+                <li><a href="sites.google.com/atacadao.com.br/diretoaoponto">Notícias</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts">Contatos</a></li>
+                <LI><a href="#utility">Utilitários</a></LI>
+                <li><a href="https://www.linkedin.com/in/edigleyston-velez/">Dev →</a></li>
+                <li class="logout">Log out</li>
+                <span class="userName"></span>
+            </ul>
+        </nav>
+
+        <section class="grid-section programs" data-anime="scroll" id="programs">
+            <h1 class="title">Animais Fantásticos</h1>
+
+            <ul class="programs-list" data-tab="menu">
+                <<li><img src="img/logo-saveweb.png" alt=""></li>
+                <li><img src="img/logo-rub.png" alt=""></li>
+                <li><img src="img/logo-tplinux.png" alt=""></li>
+            </ul>
+
+            <div class="programs-description" data-tab="content">
+                <section data-anime="show-right">
+                    <h2>Saveweb</h2>
+                    <p>
+                        
+                    </p>
+                    
+                </section>
+                <section data-anime="show-right">
+                    <h2>RUB</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>TPLinux</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <section class="grid-section faq" data-anime="scroll" id="faq">
+            <h1 class="title">FAQ</h1>
+            <dl class="faq-list" data-anime="accordion"> <!--definition list, pode ser usado para pergunta e resposta-->
+                <dt><!--pergunta-->Como saber os ramais da minha filial ou de outras filiais?</dt>
+                <dd><!--descrição como resposta-->
+                    Você pode acessar a lista de ramais pelo portal clicando no link: <a href="portal.atacadao.com.br/telefonia/ramais/index.html">Ramais.</a>
+                    Basta filtrar por filial. Caso surja alguma dúvida entrar em contato com seu CPD local.
+                </dd>
+                <dt>Meu sistema não está funcionando</dt>
+                <dd>Caso algum programa não esteja funcionando corretamente, procure o setor de informática informando o ocorrido.
+                     Porém, informe ao responsável qual programa.
+                     Isso economiza tempo e ajuda o CPD ir direto na fonte do problema!</dd>
+                <dt>O preço negociado não subiu para o PDV, o que pode ter causado isso?</dt>
+                <dd>Existem vários fatores que podem ter causado isso. Por exemplo:
+                    PDV sem comunicação; Cadastro do produto sendo feito errado; Ao efetivar o preço negociado, não está clicando em gerar arquivo PDV; O subtotal ainda não foi lançado;
+                    Desconto lançado com a compra já aberta; SASOU43 - processamento on-line de pdv's fora do ar.
+                    Sempre verificar os pontos citados e caso não seja nenhum deles, entrar em contato com o CPD.
+                </dd>
+                <dt>Notas com atraso de impressão.</dt>
+                <dd>
+                    Deve antes de qualquer decisão entrar em contato com o CPD, para que o mesmo verifique impressora e sistema de notas.
+                    A decisão de liberar o cliente é exclusivamente do setor de Frente de Caixa e Gerência, apenas!
+                </dd>
+            </dl>
+        </section>
+
+        <section class="grid-section contacts" data-anime="scroll" id="contacts">
+            <h1 class="title">Contato</h1>
+            <div class="mapa" data-tooltip aria-label="Endereço próximo à casa de show Spazzio.">
+                <img src="img/mapa.png" alt="Mapa do endereço para contato.">
+            </div>
+            <ul class="data">
+                <li>+55 (83) 3344-5800</li>
+                <li>Avenida Senador Argemiro de Figueiredo, 858, Vila Cabral, Pista Local</li>
+                <li>Campina Grande, PB</li>
+                <li>CNPJ: 75.315.333/0279-02</li>
+            </ul>
+        </section>
+
+    </div>
+    <footer class="copy">
+        <div class="links">
+            <div data-modal="utility" data-anime="scroll" id="utility">
+                <h1>Utilitários</h1>
+                <div class="boxes-footer">
+                    <div class="box-footer-1">
+                        <h2 id="matriz">Matriz</h2>
+                        <p><a href="portal.atacadao.com.br">- Portal Intranet -</a></p>
+                        <p><a href="intranet12c.br-atacadao.corp/procedimento/chama-comclose12c.html">- Portal Comercial -</a></p>
+                        <p><a href="intranet12c.br-atacadao.corp/procedimento/chama-admclose12c.html">- Portal Administrativo -</a></p>
+                        <p><a href="idm.atacadao.com.br:9443/itim/ui/Login.jsp">- IDM Usuários -</a></p>
+                        <p><a href="idm.atacadao.com.br:9443/itim/ui/logon/Login.jsp">- IDM ADM -</a></p>
+                        <p><a href="intranet12c.br-atacadao.corp/procedimento/chama-mentorclose23c.html">- Menthor -</a></p>
+                        <p><a href="srvnaplic2.atacadao.com.br/portal/PWN.nsf/Principal?OpenForm">- Worknotes -</a></p>
+                        <p><a href="">- Senior -</a></p>
+                        <p><a href="http://www.sintegra.gov.br/">- Sintegra -</a></p>
+                    </div>
+                    <div class="box-footer-2">
+                        <h2 id="sites">Sites</h2>
+                        <p><a href="https://srvuca279.br-atacadao.corp/vue">- RUB -</a></p>
+                        <p><a href="https://srvapp279.br-atacadao.corp">- Saveweb -</a></p>
+                        <p><a href="https://srtpl279.br-atacadao.corp">- TPLinux -</a></p>
+                        <p><a href="">- WorkPlace -</a></p>
+                        <p><a href="https://srvsave224.br-atacadao.corp/1/jobscode">- Gerador de QRCode -</a></p>
+                        <p><a href="https://srvsave279.br-atacadao.corp/sacolas/index.php">- Controle de Sacolas -</a></p>
+                        <p><a href="https://monitor.tecnospeed.com.br/?&filter-uf=pb&filter-type-chart=line&filter-by-chart=time">- Tecnospeed -</a></p>
+                        <p><a href="http://srvappsup.cloud.br-atacadao.corp/portal/pg-win/index.php">- WSUS -</a></p>
+                        <p><a href="https://srvvcbo.br-atacadao.corp/ui">- VMWare -</a></p>
+                    </div>
+                    <div class="box-footer-2-1">
+                        <p><a href="https://grupotecnoset.custhelp.com/app/home">- Tecnoset -</a></p>
+                        <p><a href="https://www.zebra.com/br/pt/support-downloads/request-repair.html">- Suporte Zebra -</a></p>
+                        <p><a href="http://srvnagios.br-atacadao.corp/inicio/">- Rotinas Batch -</a></p>
+                        <p><a href="http://srvnaplic2.atacadao.com.br/intranet/docSuporte.nsf/index/C7A6094FFAC8D0B38325809C00611807?OpenDocument">- NFE Status -</a></p>
+                        <p><a href="http://nfe.portal.br-atacadao.corp/NFe_GDeWeb_AD/saidas.aspx">- Triangulus NFe -</a></p>
+                        <p><a href="http://nfce.portal.br-atacadao.corp/NFCe_GDeWeb_AD/saidas.aspx">- Triangulsu NFCe -</a></p>
+                        <p><a href="https://docs.google.com/spreadsheets/d/11f2La7B5w7iMV4XPo_6460Zgs8TYQlMInZWI4n5URmE/edit#gid=255391772">- Controle de Links -</a></p>
+                        <p><a href="https://csc.br-atacadao.corp/otrs/customer.pl?Action=CustomerTicketOverview;Subaction=MyTickets">- CSC Cliente -</a></p>
+                        <p><a href="https://csc.br-atacadao.corp/otrs/index.pl">- CSC Agente -</a></p>
+                    </div>
+                    <div class="box-footer-3">
+                        <h2 id="Drives">Drives</h2>
+                        <p><a href="">- Lexmark -</a></p>
+                        <p><a href="">- Nfs -</a></p>
+                        <p><a href="">- Certificados -</a></p>
+                    </div>
+                </div>
+            </div>
+            <p id="footer">Todos os direitos reservados. <span><a href="https://instagram.com/miqueias.velez">Desenvolvido por: Edigleyston Velez</a></span></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
